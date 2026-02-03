@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Prawira Rentcar</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind Config for Custom Colors/Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 bg-gray-900/90 shadow-lg text-white">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index2.html" class="text-2xl font-bold flex items-center gap-2">
+                <!-- Using logo 1.png if available, otherwise text fallback -->
+                <img src="logo_1-removebg-preview.png" alt="Prawira Rentcar Logo"
+                    class="h-10 w-auto object-contain bg-white rounded-md p-0.5">
+                <span class="tracking-wide">PRAWIRA<span class="text-brand-500">RENTCAR</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index2.html" class="hover:text-brand-500 transition font-medium">Beranda</a>
+                <a href="about.html" class="text-brand-500 transition font-medium">Tentang Kami</a>
+                <a href="fleet.html" class="hover:text-brand-500 transition font-medium">Armada</a>
+                <a href="services.html" class="hover:text-brand-500 transition font-medium">Layanan</a>
+                <a href="blog2.html" class="hover:text-brand-500 transition font-medium">Berita</a>
+                <a href="contact.html"
+                    class="px-6 py-2 bg-brand-600 hover:bg-brand-700 rounded-full transition shadow-lg shadow-brand-600/30 font-medium">Hubungi
+                    Kami</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="md:hidden bg-gray-900 border-t border-gray-800 absolute w-full left-0 top-full px-6 shadow-xl">
+            <div class="flex flex-col space-y-4 py-6">
+                <a href="index2.html" class="hover:text-brand-500 transition">Beranda</a>
+                <a href="about.html" class="text-brand-500 transition">Tentang Kami</a>
+                <a href="fleet.html" class="hover:text-brand-500 transition">Armada</a>
+                <a href="services.html" class="hover:text-brand-500 transition">Layanan</a>
+                <a href="blog2.html" class="hover:text-brand-500 transition">Berita</a>
+                <a href="contact.html" class="pb-2 text-brand-500 font-semibold">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-900/20 to-gray-900 z-0"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Tentang Kami</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Mengenal lebih dekat
+                Prawira Rentcar, partner perjalanan terpercaya Anda di Surabaya.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Tentang Kami" class="rounded-2xl shadow-2xl">
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border-l-4 border-brand-600 hidden md:block">
+                        <p class="font-bold text-gray-800 text-lg">Terpercaya & Aman</p>
+                        <p class="text-sm text-gray-500">Legalitas resmi & berasuransi</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <span class="text-brand-600 font-bold tracking-wider uppercase text-sm">Tentang Prawira
+                        Rentcar</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Partner Perjalanan Profesional
+                        Anda</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Prawira Rentcar adalah penyedia jasa sewa mobil terkemuka yang mengutamakan kenyamanan,
+                        keamanan, dan kepuasan pelanggan. Dengan armada yang selalu dalam kondisi prima dan didukung
+                        oleh tim yang profesional.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <span
+                                class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center mr-3 text-sm"><i
+                                    class="fas fa-check"></i></span>
+                            Armada bersih dan terawat rutin
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span
+                                class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center mr-3 text-sm"><i
+                                    class="fas fa-check"></i></span>
+                            Sopir ramah, berpengalaman & hafal rute
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <span
+                                class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center mr-3 text-sm"><i
+                                    class="fas fa-check"></i></span>
+                            Harga kompetitif dengan layanan premium
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm">Tim Prawira Rentcar</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Profesionalitas & Kebersamaan</h2>
+                <div class="w-20 h-1.5 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Team Photo 1 -->
+                <div class="group" data-aos="fade-up" data-aos-delay="0">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-lg border-2 border-gray-100 hover:border-brand-200 transition">
+                        <img src="IMG_1957.JPG" alt="Team Activity 1"
+                            class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Siap Melayani</h3>
+                        <p class="text-gray-500 text-sm mt-2 px-4">Seluruh tim kami selalu siap sedia memberikan
+                            pelayanan prima 24/7 untuk kenyamanan perjalanan Anda.</p>
+                    </div>
+                </div>
+
+                <!-- Team Photo 2 -->
+                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-lg border-2 border-gray-100 hover:border-brand-200 transition">
+                        <img src="IMG_1968.JPG" alt="Team Activity 2"
+                            class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Solid & Kompak</h3>
+                        <p class="text-gray-500 text-sm mt-2 px-4">Kekompakan tim menjadi kunci utama kami dalam menjaga
+                            kualitas layanan dan kepuasan pelanggan.</p>
+                    </div>
+                </div>
+
+                <!-- Team Photo 3 -->
+                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-lg border-2 border-gray-100 hover:border-brand-200 transition">
+                        <img src="IMG_1970.JPG" alt="Team Activity 3"
+                            class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Briefing Rutin</h3>
+                        <p class="text-gray-500 text-sm mt-2 px-4">Kami selalu melakukan briefing dan evaluasi rutin
+                            untuk memastikan standar operasional tetap terjaga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <!-- Column 1 -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                        <span class="tracking-wide">PRAWIRA<span class="text-brand-500">RENTCAR</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">
+                        Jasa sewa mobil profesional dengan pelayanan terbaik dan unit kendaraan terlengkap untuk segala
+                        kebutuhan perjalanan Anda.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index2.html" class="hover:text-brand-500 transition">Beranda</a></li>
+                        <li><a href="about.html" class="text-brand-500 transition">Tentang Kami</a></li>
+                        <li><a href="fleet.html" class="hover:text-brand-500 transition">Daftar Armada</a></li>
+                        <li><a href="services.html" class="hover:text-brand-500 transition">Layanan</a></li>
+                        <li><a href="#" class="hover:text-brand-500 transition">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Kontak Kami</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-brand-500"></i>
+                            <span>Jl. Raya Utama No. 123, Kota Besar, Indonesia</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mt-1 mr-3 text-brand-500"></i>
+                            <span>+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mt-1 mr-3 text-brand-500"></i>
+                            <span>info@prawirarentcar.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mt-1 mr-3 text-brand-500"></i>
+                            <span>Senin - Minggu (24 Jam)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">Lokasi Kami</h3>
+                    <!-- Embedded Map Placeholder -->
+                    <div class="w-full h-40 bg-gray-800 rounded-lg overflow-hidden relative">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.33806393527!2d112.63028292864673!3d-7.978469457635394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2db%3A0x2984252d02b79e70!2sMalang%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1679888888888!5m2!1sen!2sid"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                &copy; 2024 Prawira Rentcar. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Bot Wrapper -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        <!-- Chat Box -->
+        <div id="chat-box"
+            class="bg-white w-80 md:w-96 rounded-2xl shadow-2xl transform scale-0 origin-bottom-right transition-transform duration-300 ease-in-out border border-gray-100 hidden">
+            <!-- Header -->
+            <div
+                class="bg-gradient-to-r from-brand-700 to-brand-600 p-4 rounded-t-2xl flex justify-between items-center text-white shadow-md">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <i class="fas fa-robot text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Prawira Assistant</h4>
+                        <span class="text-xs text-brand-100 flex items-center gap-1"><span
+                                class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span> Online</span>
+                    </div>
+                </div>
+                <button id="close-chat"
+                    class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 transition text-brand-100 hover:text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div id="chat-body" class="h-96 p-4 overflow-y-auto bg-gray-50/50 space-y-4 scrollbar-thin">
+                <!-- Welcome Message -->
+                <div class="flex gap-3">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0 border border-brand-200">
+                        <img src="logo 1.png" alt="Bot" class="w-5 h-5 object-contain">
+                    </div>
+                    <div
+                        class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 text-sm text-gray-600">
+                        Halo! 👋 Saya asisten virtual Prawira Rentcar. Ada yang bisa saya bantu terkait penyewaan mobil?
+                    </div>
+                </div>
+
+                <!-- FAQ Options -->
+                <div class="flex flex-col gap-2 pl-11" id="chat-options">
+                    <button onclick="askBot('price')"
+                        class="text-left px-4 py-2.5 bg-white border border-brand-100 hover:bg-brand-50 hover:border-brand-300 rounded-xl text-sm text-brand-700 transition shadow-sm hover:shadow active:scale-95 duration-200">
+                        💰 Berapa harga sewanya?
+                    </button>
+                    <button onclick="askBot('lepas-kunci')"
+                        class="text-left px-4 py-2.5 bg-white border border-brand-100 hover:bg-brand-50 hover:border-brand-300 rounded-xl text-sm text-brand-700 transition shadow-sm hover:shadow active:scale-95 duration-200">
+                        🔑 Syarat lepas kunci?
+                    </button>
+                    <button onclick="askBot('with-driver')"
+                        class="text-left px-4 py-2.5 bg-white border border-brand-100 hover:bg-brand-50 hover:border-brand-300 rounded-xl text-sm text-brand-700 transition shadow-sm hover:shadow active:scale-95 duration-200">
+                        👨‍✈️ Fasilitas sewa dengan driver?
+                    </button>
+                    <button onclick="askBot('payment')"
+                        class="text-left px-4 py-2.5 bg-white border border-brand-100 hover:bg-brand-50 hover:border-brand-300 rounded-xl text-sm text-brand-700 transition shadow-sm hover:shadow active:scale-95 duration-200">
+                        💳 Metode pembayarannya?
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="p-3 border-t border-gray-100 bg-white rounded-b-2xl">
+                <a href="https://wa.me/6281234567890" target="_blank"
+                    class="flex items-center justify-center gap-2 w-full py-2.5 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold transition shadow-lg shadow-green-500/20 active:scale-95 duration-200">
+                    <i class="fab fa-whatsapp text-lg"></i> Chat Admin Langsung
+                </a>
+            </div>
+        </div>
+
+        <!-- Toggle Button -->
+        <button id="toggle-chat"
+            class="mt-4 w-16 h-16 rounded-full bg-gradient-to-br from-brand-600 to-brand-800 text-white shadow-2xl flex items-center justify-center transform hover:scale-110 transition duration-300 hover:rotate-12 border-4 border-white">
+            <i class="fas fa-comment-dots text-3xl animate-pulse"></i>
+        </button>
+    </div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- External JS -->
+    <script src="js/chat.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

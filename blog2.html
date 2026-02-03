@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Berita - Prawira Rentcar</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind Config reuse -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden font-jakarta">
+
+    <!-- Navbar (Same as Index but Dark Text) -->
+    <nav class="fixed w-full z-50 py-4 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index2.html" class="text-2xl font-bold flex items-center gap-2">
+                <img src="logo 1.png" alt="Prawira Rentcar Logo" class="h-10 w-auto object-contain">
+                <span class="tracking-wide text-gray-900">PRAWIRA<span class="text-brand-600">RENTCAR</span></span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index2.html" class="hover:text-brand-600 transition font-medium">Beranda</a>
+                <a href="about.html" class="hover:text-brand-600 transition font-medium">Tentang Kami</a>
+                <a href="fleet.html" class="hover:text-brand-600 transition font-medium">Armada</a>
+                <a href="services.html" class="hover:text-brand-600 transition font-medium">Layanan</a>
+                <a href="blog2.html" class="text-brand-600 font-bold transition font-medium">Berita</a>
+                <a href="contact.html"
+                    class="px-6 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-full transition shadow-lg shadow-brand-600/30 font-medium">Hubungi
+                    Kami</a>
+            </div>
+
+            <button class="md:hidden text-2xl focus:outline-none text-gray-900">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 bg-brand-900 relative overflow-hidden text-white">
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-brand-800 border border-brand-600 text-brand-200 text-xs font-bold tracking-widest mb-4">BLOG
+                & UPDATE</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Informasi & Tips Perjalanan</h1>
+            <p class="text-brand-100 max-w-2xl mx-auto text-lg">Dapatkan wawasan terbaru seputar dunia otomotif, tips
+                traveling, dan promo menarik dari Prawira Rentcar.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+
+                <!-- Blog Grid -->
+                <div class="lg:col-span-2">
+
+                    <!-- Search Mobile -->
+                    <div class="block lg:hidden mb-8">
+                        <div class="relative">
+                            <input type="text" placeholder="Cari artikel..."
+                                class="w-full pl-5 pr-12 py-3 rounded-xl border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition">
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-brand-600">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Article 1 -->
+                        <article
+                            class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-full group">
+                            <a href="blog.html" class="block relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800"
+                                    alt="Family Car"
+                                    class="w-full h-56 object-cover transform group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-4 left-4 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    TIPS TRAVEL</div>
+                            </a>
+                            <div class="p-6 flex-1 flex flex-col">
+                                <div class="text-xs text-gray-500 mb-3 flex items-center gap-2">
+                                    <i class="far fa-calendar-alt"></i> 27 Jan 2026
+                                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                    <i class="far fa-user"></i> Admin
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-600 transition">
+                                    <a href="blog.html">Cara Memilih Mobil Rental yang Pas untuk Keluarga Besar</a>
+                                </h3>
+                                <p class="text-gray-500 text-sm line-clamp-3 mb-5 flex-1">
+                                    Bepergian bersama ketluaarga besar tentu membutuhkan perencanaan ekstra, terutama
+                                    soal akomodasi transportasi yang nyaman dan muat banyak.
+                                </p>
+                                <a href="blog.html"
+                                    class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-800 transition">
+                                    Baca Selengkapnya <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 2 -->
+                        <article
+                            class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-full group">
+                            <a href="blog.html" class="block relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800"
+                                    alt="Zenix Hybrid"
+                                    class="w-full h-56 object-cover transform group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-4 left-4 bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    REVIEW</div>
+                            </a>
+                            <div class="p-6 flex-1 flex flex-col">
+                                <div class="text-xs text-gray-500 mb-3 flex items-center gap-2">
+                                    <i class="far fa-calendar-alt"></i> 25 Jan 2026
+                                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                    <i class="far fa-user"></i> Admin
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-600 transition">
+                                    <a href="blog.html">Kelebihan Innova Zenix Hybrid untuk Perjalanan Jauh</a>
+                                </h3>
+                                <p class="text-gray-500 text-sm line-clamp-3 mb-5 flex-1">
+                                    Mengapa Innova Zenix Hybrid menjadi pilihan favorit pelanggan kami untuk perjalanan
+                                    luar kota? Irit, nyaman, dan bertenaga.
+                                </p>
+                                <a href="blog.html"
+                                    class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-800 transition">
+                                    Baca Selengkapnya <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 3 -->
+                        <article
+                            class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-full group">
+                            <a href="blog.html" class="block relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800"
+                                    alt="Malang Batu"
+                                    class="w-full h-56 object-cover transform group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    WISATA</div>
+                            </a>
+                            <div class="p-6 flex-1 flex flex-col">
+                                <div class="text-xs text-gray-500 mb-3 flex items-center gap-2">
+                                    <i class="far fa-calendar-alt"></i> 20 Jan 2026
+                                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                    <i class="far fa-user"></i> Editor
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-600 transition">
+                                    <a href="blog.html">5 Destinasi Wisata Hidden Gem di Malang & Batu</a>
+                                </h3>
+                                <p class="text-gray-500 text-sm line-clamp-3 mb-5 flex-1">
+                                    Liburan ke Malang tidak lengkap jika belum mengunjungi tempat-tempat indah yang
+                                    masih sepi pengunjung ini.
+                                </p>
+                                <a href="blog.html"
+                                    class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-800 transition">
+                                    Baca Selengkapnya <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 4 -->
+                        <article
+                            class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col h-full group">
+                            <a href="blog.html" class="block relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=800"
+                                    alt="Maintenance"
+                                    class="w-full h-56 object-cover transform group-hover:scale-105 transition duration-500">
+                                <div
+                                    class="absolute top-4 left-4 bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    TIPS MOBIL</div>
+                            </a>
+                            <div class="p-6 flex-1 flex flex-col">
+                                <div class="text-xs text-gray-500 mb-3 flex items-center gap-2">
+                                    <i class="far fa-calendar-alt"></i> 15 Jan 2026
+                                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                    <i class="far fa-user"></i> Teknisi
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-600 transition">
+                                    <a href="blog.html">Pentingnya Pengecekan Rutin Sebelum Perjalanan Jauh</a>
+                                </h3>
+                                <p class="text-gray-500 text-sm line-clamp-3 mb-5 flex-1">
+                                    Jangan abaikan kondisi kendaraan. Simak 5 poin penting yang wajib dicek di bengkel
+                                    sebelum roadtrip.
+                                </p>
+                                <a href="blog.html"
+                                    class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-800 transition">
+                                    Baca Selengkapnya <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="mt-12 flex justify-center gap-2">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-500 hover:bg-gray-50 transition"><i
+                                class="fas fa-chevron-left"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg bg-brand-600 text-white shadow-lg shadow-brand-600/30">1</a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-500 hover:bg-gray-50 transition">2</a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-500 hover:bg-gray-50 transition">3</a>
+                        <span class="w-10 h-10 flex items-center justify-center text-gray-400">...</span>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-500 hover:bg-gray-50 transition"><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="lg:col-span-1 space-y-8">
+
+                    <!-- Search Widget -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hidden lg:block">
+                        <h4 class="font-bold text-lg mb-4">Cari Artikel</h4>
+                        <div class="relative">
+                            <input type="text" placeholder="Ketik kata kunci..."
+                                class="w-full pl-5 pr-12 py-3 rounded-xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition">
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-brand-600">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-lg mb-4">Kategori</h4>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#"
+                                    class="flex justify-between items-center text-gray-600 hover:text-brand-600 transition group">
+                                    <span><i class="fas fa-folder text-brand-200 mr-2 group-hover:text-brand-500"></i>
+                                        Tips Travel</span>
+                                    <span
+                                        class="bg-brand-50 text-brand-600 text-xs font-bold px-2 py-1 rounded-full">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-between items-center text-gray-600 hover:text-brand-600 transition group">
+                                    <span><i class="fas fa-folder text-brand-200 mr-2 group-hover:text-brand-500"></i>
+                                        Review Unit</span>
+                                    <span
+                                        class="bg-brand-50 text-brand-600 text-xs font-bold px-2 py-1 rounded-full">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-between items-center text-gray-600 hover:text-brand-600 transition group">
+                                    <span><i class="fas fa-folder text-brand-200 mr-2 group-hover:text-brand-500"></i>
+                                        Promo & Event</span>
+                                    <span
+                                        class="bg-brand-50 text-brand-600 text-xs font-bold px-2 py-1 rounded-full">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-between items-center text-gray-600 hover:text-brand-600 transition group">
+                                    <span><i class="fas fa-folder text-brand-200 mr-2 group-hover:text-brand-500"></i>
+                                        Wisata Jawa Timur</span>
+                                    <span
+                                        class="bg-brand-50 text-brand-600 text-xs font-bold px-2 py-1 rounded-full">15</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-lg mb-4">Artikel Populer</h4>
+                        <div class="space-y-4">
+                            <a href="blog.html" class="flex gap-4 group">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=200"
+                                        alt="Zenix"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                                </div>
+                                <div>
+                                    <h5
+                                        class="text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-brand-600 transition">
+                                        Review Jujur Penggunaan Innova Zenix Hybrid 1000km</h5>
+                                    <span class="text-xs text-gray-400 mt-1 block">22 Jan 2026</span>
+                                </div>
+                            </a>
+                            <a href="blog.html" class="flex gap-4 group">
+                                <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=200"
+                                        alt="Bromo"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                                </div>
+                                <div>
+                                    <h5
+                                        class="text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-brand-600 transition">
+                                        Panduan Lengkap Wisata ke Bromo via Malang</h5>
+                                    <span class="text-xs text-gray-400 mt-1 block">18 Jan 2026</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CTA Banner Sidebar -->
+                    <div class="rounded-2xl overflow-hidden relative p-8 text-center text-white">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="absolute inset-0 w-full h-full object-cover" alt="CTA">
+                        <div class="absolute inset-0 bg-brand-900/80"></div>
+                        <div class="relative z-10">
+                            <h4 class="font-bold text-xl mb-2">Butuh Mobil?</h4>
+                            <p class="text-sm text-brand-100 mb-6">Booking sekarang dan dapatkan diskon 10%.</p>
+                            <a href="https://wa.me/6281234567890"
+                                class="inline-block px-6 py-2 bg-white text-brand-900 rounded-full text-sm font-bold hover:bg-brand-50 transition">Chat
+                                Admin</a>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Simpler version) -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-xl font-bold text-white tracking-wide">PRAWIRA<span
+                        class="text-brand-500">RENTCAR</span></span>
+                <p class="text-sm text-gray-500 mt-1">&copy; 2024. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="index2.html" class="hover:text-white transition">Beranda</a>
+                <a href="about.html" class="hover:text-white transition">Tentang</a>
+                <a href="contact.html" class="hover:text-white transition">Hubungi Kami</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
