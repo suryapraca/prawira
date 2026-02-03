@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prawira Rentcar | Premium Mobility Surabaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .hero-section {
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.4)), url('b.jpg');
+            background-size: cover; background-position: center;
+        }
+        .car-card:hover .car-img { transform: scale(1.08); }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <nav class="fixed w-full z-[100] px-4 md:px-10 py-5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-2xl px-6 py-3 shadow-2xl border border-white/50">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-300">
+                    <i class="fas fa-car-rear"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold leading-none tracking-tight uppercase">Prawira <span class="text-blue-600">Rent</span></span>
+                    <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Surabaya Premium</span>
+                </div>
+            </div>
+            <div class="hidden lg:flex gap-8 font-bold text-xs uppercase tracking-widest">
+                <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="#services" class="hover:text-blue-600 transition">Layanan</a>
+                <a href="#pricelist" class="hover:text-blue-600 transition">Armada</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition">Testimoni</a>
+                <a href="#blog" class="hover:text-blue-600 transition">Berita</a>
+            </div>
+            <a href="https://wa.me/628123456789" class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-bold hover:bg-slate-900 transition flex items-center gap-2 shadow-xl shadow-blue-200">
+                <i class="fab fa-whatsapp text-lg"></i> <span class="hidden md:inline italic">PESAN SEKARANG</span>
+            </a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section min-h-screen flex items-center pt-28 pb-12 px-6">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-5 gap-16 items-center">
+            <div class="lg:col-span-3 text-white space-y-8">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+                    <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span></span>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em]">Rental Mobil #1 Surabaya</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter italic">DRIVE THE <br><span class="text-blue-500 underline decoration-blue-600/30">PRESTIGE.</span></h1>
+                <p class="text-lg text-slate-300 max-w-lg leading-relaxed italic">Menyediakan armada terbaru 2024-2026 dengan kondisi prima dan layanan driver VIP untuk perjalanan bisnis maupun wisata Anda.</p>
+                <div class="flex gap-10 pt-4">
+                    <div><h3 class="text-3xl font-black text-blue-500">50+</h3><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Unit Ready</p></div>
+                    <div><h3 class="text-3xl font-black text-blue-500">24/7</h3><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Support</p></div>
+                    <div><h3 class="text-3xl font-black text-blue-500">4.9</h3><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Google Rating</p></div>
+                </div>
+            </div>
+
+            <div id="booking" class="lg:col-span-2 bg-white rounded-[3rem] p-10 shadow-2xl border border-slate-100">
+                <h3 class="text-2xl font-black text-slate-900 mb-2 italic">Reservasi Cepat</h3>
+                <p class="text-slate-400 text-xs mb-8">Dapatkan penawaran harga terbaik hari ini.</p>
+                <form class="space-y-4">
+                    <div class="space-y-1">
+                        <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-2">Nama Lengkap</label>
+                        <input type="text" placeholder="Contoh: Budi Santoso" class="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-2">Tanggal Ambil</label>
+                            <input type="date" class="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-2 focus:ring-blue-600 outline-none">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-2">Pilih Unit</label>
+                            <select class="w-full px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-2 focus:ring-blue-600 outline-none">
+                                <option>Innova Zenix 2024</option>
+                                <option>Fortuner GR Sport</option>
+                                <option>Alphard Transformer</option>
+                                <option>Hiace Premio</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="w-full bg-slate-900 hover:bg-blue-600 text-white font-black py-5 rounded-2xl transition-all duration-300 shadow-xl mt-4 tracking-widest italic">CEK KETERSEDIAAN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 space-y-3">
+                <span class="text-blue-600 font-black uppercase text-xs tracking-[0.3em]">Why Choose Us</span>
+                <h2 class="text-4xl md:text-5xl font-black italic tracking-tighter">Layanan Standar Internasional</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-slate-50 p-10 rounded-[2.5rem] hover:bg-blue-600 hover:text-white transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 text-xl mb-6 shadow-sm group-hover:rotate-12 transition">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h4 class="font-black text-lg mb-2 italic">Asuransi All Risk</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed group-hover:text-blue-50">Perjalanan tenang dengan proteksi penuh untuk setiap unit armada kami.</p>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[2.5rem] hover:bg-blue-600 hover:text-white transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 text-xl mb-6 shadow-sm group-hover:rotate-12 transition">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4 class="font-black text-lg mb-2 italic">Professional Driver</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed group-hover:text-blue-50">Driver terlatih secara etika, keamanan, dan penguasaan rute Jawa-Bali.</p>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[2.5rem] hover:bg-blue-600 hover:text-white transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 text-xl mb-6 shadow-sm group-hover:rotate-12 transition">
+                        <i class="fas fa-spray-can-sparkles"></i>
+                    </div>
+                    <h4 class="font-black text-lg mb-2 italic">Unit Higienis</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed group-hover:text-blue-50">Fogging disinfektan dan cuci bersih sebelum unit diserahkan ke pelanggan.</p>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[2.5rem] hover:bg-blue-600 hover:text-white transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 text-xl mb-6 shadow-sm group-hover:rotate-12 transition">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="font-black text-lg mb-2 italic">Tepat Waktu</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed group-hover:text-blue-50">Jaminan unit standby di lokasi 15 menit sebelum jadwal pemakaian.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricelist" class="py-24 bg-slate-900 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <span class="text-blue-500 font-black uppercase text-xs tracking-widest">The Fleet</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white italic tracking-tighter mt-2">Katalog Mobil Premium</h2>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 rounded-[3rem] p-4 car-card transition duration-500 border border-slate-700/50">
+                    <div class="h-64 rounded-[2.5rem] overflow-hidden mb-6 relative">
+                        <img src="reborn.png" class="w-full h-full object-cover car-img transition duration-700">
+                        <span class="absolute top-6 left-6 bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Hybrid</span>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-black text-white italic">Innova Reborn</h4>
+                            <span class="text-slate-400 font-bold">2024</span>
+                        </div>
+                        <div class="flex gap-4 text-[10px] font-bold text-slate-500 uppercase mb-8">
+                            <span><i class="fas fa-user mr-1 text-blue-500"></i> 7 Seats</span>
+                            <span><i class="fas fa-cog mr-1 text-blue-500"></i> Matic</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-6 border-t border-slate-700">
+                            <div><p class="text-[10px] text-slate-500 font-bold uppercase">Mulai Dari</p><p class="text-xl font-black text-blue-500 italic">Rp 750.000</p></div>
+                            <button onclick="openCarModal('Toyota', 'Innova Reborn', '2024', 'Solar', '7 Seats', 'Rp 750.000', 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800', 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800')" class="bg-white text-slate-900 px-6 py-3 rounded-2xl font-black text-xs hover:bg-blue-600 hover:text-white transition">DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-[3rem] p-4 car-card transition duration-500 border border-slate-700/50">
+                    <div class="h-64 rounded-[2.5rem] overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover car-img transition duration-700">
+                    </div>
+                    <div class="px-4 pb-4">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-black text-white italic">Fortuner GR</h4>
+                            <span class="text-slate-400 font-bold">2023</span>
+                        </div>
+                        <div class="flex gap-4 text-[10px] font-bold text-slate-500 uppercase mb-8">
+                            <span><i class="fas fa-user mr-1 text-blue-500"></i> 7 Seats</span>
+                            <span><i class="fas fa-cog mr-1 text-blue-500"></i> Matic</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-6 border-t border-slate-700">
+                            <div><p class="text-[10px] text-slate-500 font-bold uppercase">Mulai Dari</p><p class="text-xl font-black text-blue-500 italic">Rp 1.200.000</p></div>
+                            <button onclick="openCarModal('Toyota', 'Fortuner GR', '2023', 'Diesel', '7 Seats', 'Rp 1.200.000', 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800', 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800')" class="bg-white text-slate-900 px-6 py-3 rounded-2xl font-black text-xs hover:bg-blue-600 hover:text-white transition">DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-[3rem] p-4 car-card transition duration-500 border border-slate-700/50">
+                    <div class="h-64 rounded-[2.5rem] overflow-hidden mb-6 relative">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover car-img transition duration-700">
+                    </div>
+                    <div class="px-4 pb-4">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-black text-white italic">Hiace Premio</h4>
+                            <span class="text-slate-400 font-bold">2024</span>
+                        </div>
+                        <div class="flex gap-4 text-[10px] font-bold text-slate-500 uppercase mb-8">
+                            <span><i class="fas fa-user mr-1 text-blue-500"></i> 14 Seats</span>
+                            <span><i class="fas fa-cog mr-1 text-blue-500"></i> Manual</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-6 border-t border-slate-700">
+                            <div><p class="text-[10px] text-slate-500 font-bold uppercase">Mulai Dari</p><p class="text-xl font-black text-blue-500 italic">Rp 1.100.000</p></div>
+                            <button onclick="openCarModal('Toyota', 'Hiace Premio', '2024', 'Diesel', '14 Seats', 'Rp 1.100.000', 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800', 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800')" class="bg-white text-slate-900 px-6 py-3 rounded-2xl font-black text-xs hover:bg-blue-600 hover:text-white transition">DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-black uppercase text-xs tracking-[0.3em]">Testimonials</span>
+                <h2 class="text-4xl md:text-5xl font-black italic tracking-tighter mt-2 text-slate-900">Apa Kata Pelanggan Kami?</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-10 rounded-[3rem] relative group hover:bg-slate-900 transition duration-500">
+                    <div class="absolute top-10 right-10 text-6xl text-blue-600 opacity-10 group-hover:opacity-20 transition"><i class="fas fa-quote-right"></i></div>
+                    <div class="flex gap-1 text-orange-400 mb-6 text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 group-hover:text-slate-300 italic mb-10 leading-relaxed italic">"Sangat puas sewa Innova Zenix di sini. Mobilnya bersih banget, adminnya responsif meski booking jam 11 malam. Drivernya sangat sopan dan paham rute."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/100?u=9" class="w-12 h-12 rounded-2xl object-cover">
+                        <div><h5 class="font-black group-hover:text-white italic text-sm">Andi Wijaya</h5><p class="text-[10px] text-slate-400 font-bold uppercase">Business Traveler</p></div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[3rem] relative group hover:bg-slate-900 transition duration-500 border-2 border-blue-600/10">
+                    <div class="absolute top-10 right-10 text-6xl text-blue-600 opacity-10 group-hover:opacity-20 transition"><i class="fas fa-quote-right"></i></div>
+                    <div class="flex gap-1 text-orange-400 mb-6 text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 group-hover:text-slate-300 italic mb-10 leading-relaxed italic">"Liburan keluarga di Surabaya jadi lancar berkat Prawira. Unit Hiace-nya sangat nyaman untuk orang tua saya yang sudah lansia. Top banget layanannya!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/100?u=12" class="w-12 h-12 rounded-2xl object-cover">
+                        <div><h5 class="font-black group-hover:text-white italic text-sm">Siska Pratama</h5><p class="text-[10px] text-slate-400 font-bold uppercase">Family Trip</p></div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[3rem] relative group hover:bg-slate-900 transition duration-500">
+                    <div class="absolute top-10 right-10 text-6xl text-blue-600 opacity-10 group-hover:opacity-20 transition"><i class="fas fa-quote-right"></i></div>
+                    <div class="flex gap-1 text-orange-400 mb-6 text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 group-hover:text-slate-300 italic mb-10 leading-relaxed italic">"Proses lepas kunci tercepat di Surabaya. Verifikasi data gak ribet, unit langsung diantar ke Bandara Juanda tepat waktu. Gak bakal pindah lain hati."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/100?u=22" class="w-12 h-12 rounded-2xl object-cover">
+                        <div><h5 class="font-black group-hover:text-white italic text-sm">Budi Santoso</h5><p class="text-[10px] text-slate-400 font-bold uppercase">Freelancer</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="requirements" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8">
+                <h2 class="text-4xl md:text-5xl font-black italic tracking-tighter">Syarat Sewa <span class="text-blue-500">Tanpa Ribet.</span></h2>
+                <div class="space-y-6">
+                    <div class="flex gap-6 p-8 bg-white/5 rounded-[2.5rem] border border-white/10 hover:border-blue-500 transition">
+                        <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center font-black italic">01</div>
+                        <div><h4 class="font-black mb-1">Identitas Diri</h4><p class="text-sm text-slate-400 italic">E-KTP asli & Kartu Keluarga (untuk verifikasi awal via WhatsApp).</p></div>
+                    </div>
+                    <div class="flex gap-6 p-8 bg-white/5 rounded-[2.5rem] border border-white/10 hover:border-blue-500 transition">
+                        <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center font-black italic">02</div>
+                        <div><h4 class="font-black mb-1">SIM A Aktif</h4><p class="text-sm text-slate-400 italic">Wajib bagi penyewa Lepas Kunci. Untuk paket Driver tidak diperlukan.</p></div>
+                    </div>
+                    <div class="flex gap-6 p-8 bg-white/5 rounded-[2.5rem] border border-white/10 hover:border-blue-500 transition">
+                        <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center font-black italic">03</div>
+                        <div><h4 class="font-black mb-1">Jaminan</h4><p class="text-sm text-slate-400 italic">Meninggalkan motor/identitas asli sebagai jaminan selama masa sewa.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-blue-600 rounded-[3rem] p-12 text-white shadow-2xl shadow-blue-500/20">
+                <h3 class="text-2xl font-black mb-8 italic">FAQ - Pertanyaan Umum</h3>
+                <div class="space-y-6">
+                    <div class="border-b border-white/20 pb-4 italic">
+                        <p class="font-black mb-2">Berapa minimal waktu sewa?</p>
+                        <p class="text-sm text-blue-100">Minimal 24 jam untuk lepas kunci, dan 12 jam untuk penggunaan dengan driver.</p>
+                    </div>
+                    <div class="border-b border-white/20 pb-4 italic">
+                        <p class="font-black mb-2">Apakah bisa antar-jemput Bandara?</p>
+                        <p class="text-sm text-blue-100">Sangat bisa. Kami melayani antar-jemput di Bandara Juanda, Stasiun Gubeng, & Stasiun Pasar Turi.</p>
+                    </div>
+                    <div class="italic">
+                        <p class="font-black mb-2">Apakah harga sudah termasuk BBM?</p>
+                        <p class="text-sm text-blue-100">Tersedia paket mobil saja atau paket All-In (Mobil + Driver + BBM).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-12 italic tracking-tighter text-center">Berita & Tips Wisata</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="rounded-[2.5rem] overflow-hidden mb-6 h-64 shadow-lg"><img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <span class="text-blue-600 font-black text-[10px] uppercase tracking-widest">Travel Tips</span>
+                    <h4 class="text-xl font-black mt-2 mb-4 italic group-hover:text-blue-600 transition">Cara Memilih Mobil Rental yang Pas untuk Keluarga Besar</h4>
+                    <p class="text-sm text-slate-400 italic line-clamp-2">Bepergian bersama keluarga besar di Surabaya tentu membutuhkan perencanaan ekstra, terutama soal akomodasi transportasi...</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="rounded-[2.5rem] overflow-hidden mb-6 h-64 shadow-lg"><img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <span class="text-blue-600 font-black text-[10px] uppercase tracking-widest">Automotive</span>
+                    <h4 class="text-xl font-black mt-2 mb-4 italic group-hover:text-blue-600 transition">Mengenal Fitur Hybrid di Toyota Zenix Terbaru</h4>
+                    <p class="text-sm text-slate-400 italic line-clamp-2">Teknologi ramah lingkungan yang menghemat pengeluaran BBM Anda saat berkeliling Surabaya...</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="rounded-[2.5rem] overflow-hidden mb-6 h-64 shadow-lg"><img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <span class="text-blue-600 font-black text-[10px] uppercase tracking-widest">Surabaya News</span>
+                    <h4 class="text-xl font-black mt-2 mb-4 italic group-hover:text-blue-600 transition">5 Hidden Gem Kuliner di Surabaya Dekat Wonokromo</h4>
+                    <p class="text-sm text-slate-400 italic line-clamp-2">Wajib mampir saat Anda mengambil unit mobil rental di kantor Prawira Rentcar Surabaya...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 border-b border-white/10 pb-20 italic">
+            <div class="col-span-2 space-y-8">
+                <h3 class="text-3xl font-black italic">Prawira <span class="text-blue-500 uppercase">Rent.</span></h3>
+                <p class="text-slate-400 max-w-sm">Solusi sewa mobil premium nomor satu di Surabaya. Melayani dengan dedikasi sejak 2015.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-blue-600 transition shadow-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-blue-600 transition shadow-lg"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-black mb-6 uppercase text-xs tracking-widest text-blue-500">Alamat Kami</h5>
+                <ul class="space-y-4 text-sm font-bold text-slate-300">
+                    <li class="flex gap-3"><i class="fas fa-map-marker-alt text-blue-500 mt-1"></i> Jl. Tales 2 No 35, Jagir, Kec Wonokromo, Surabaya</li>
+                    <li><i class="fas fa-phone-alt text-blue-500 mr-2"></i> +62 812 3456 7890</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black mb-6 uppercase text-xs tracking-widest text-blue-500">Link Cepat</h5>
+                <ul class="space-y-4 text-sm font-bold text-slate-300">
+                    <li><a href="#home" class="hover:text-white transition">Beranda</a></li>
+                    <li><a href="#pricelist" class="hover:text-white transition">Armada Kami</a></li>
+                    <li><a href="#requirements" class="hover:text-white transition">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center text-[10px] text-slate-500 font-bold uppercase tracking-[0.4em] pt-12">
+            &copy; 2026 Prawira Rentcar Surabaya. Built with Passion.
+        </p>
+    </footer>
+
+    <div id="carModal" class="fixed inset-0 bg-slate-900/95 hidden z-[200] overflow-y-auto p-4 md:p-10 custom-scrollbar">
+        <div class="max-w-4xl mx-auto my-10 bg-white rounded-[4rem] overflow-hidden shadow-2xl relative animate-in fade-in zoom-in duration-300 italic">
+            <button onclick="closeModal()" class="absolute top-8 right-8 z-20 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-slate-900 hover:bg-red-500 hover:text-white transition">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="grid md:grid-cols-2">
+                <div class="p-8 bg-slate-50 space-y-4">
+                    <div class="rounded-[3rem] overflow-hidden shadow-lg relative">
+                        <span class="absolute top-4 left-6 bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Exterior</span>
+                        <img id="exteriorImg" src="" class="w-full h-60 object-cover">
+                    </div>
+                    <div class="rounded-[3rem] overflow-hidden shadow-lg relative">
+                        <span class="absolute top-4 left-6 bg-emerald-600 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Interior</span>
+                        <img id="interiorImg" src="" class="w-full h-60 object-cover">
+                    </div>
+                </div>
+                <div class="p-12 flex flex-col justify-center">
+                    <h3 id="modalTitle" class="text-3xl font-black mb-2 tracking-tighter italic">Toyota Zenix</h3>
+                    <p class="text-blue-600 font-bold text-xs mb-10 tracking-[0.2em] uppercase">Spesifikasi Lengkap Unit</p>
+                    <div class="grid grid-cols-2 gap-y-6 mb-10 text-sm">
+                        <div><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Brand</p><p id="detailMerk" class="font-black">Toyota</p></div>
+                        <div><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Energy</p><p id="detailBBM" class="font-black">Hybrid</p></div>
+                        <div><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Release</p><p id="detailTahun" class="font-black">2024</p></div>
+                        <div><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Capacity</p><p id="detailSeat" class="font-black">7 Kursi</p></div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-[2.5rem] flex justify-between items-center mb-8 border border-slate-100">
+                        <div><p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Investment</p><p id="detailHarga" class="text-2xl font-black text-blue-600 italic">Rp 750k</p></div>
+                        <i class="fas fa-shield-heart text-slate-200 text-3xl"></i>
+                    </div>
+                    <a href="https://wa.me/628123456789" class="bg-blue-600 text-white text-center py-5 rounded-[2rem] font-black shadow-xl shadow-blue-200 hover:bg-slate-900 transition italic uppercase tracking-widest text-xs">BOOKING UNIT INI SEKARANG</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCarModal(merk, type, tahun, bbm, seat, harga, extImg, intImg) {
+            document.getElementById('modalTitle').innerText = merk + ' ' + type;
+            document.getElementById('detailMerk').innerText = merk;
+            document.getElementById('detailTahun').innerText = tahun;
+            document.getElementById('detailBBM').innerText = bbm;
+            document.getElementById('detailSeat').innerText = seat;
+            document.getElementById('detailHarga').innerText = harga;
+            document.getElementById('exteriorImg').src = extImg;
+            document.getElementById('interiorImg').src = intImg;
+            document.getElementById('carModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('carModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
