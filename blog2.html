@@ -68,9 +68,25 @@
                     Kami</a>
             </div>
 
-            <button class="md:hidden text-2xl focus:outline-none text-gray-900">
+            <button id="mobile-menu-btn" type="button" onclick="toggleMobileMenu()"
+                class="md:hidden text-2xl focus:outline-none text-gray-900 relative z-50">
                 <i class="fas fa-bars"></i>
             </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-200 absolute w-full left-0 top-full px-6 shadow-xl z-50">
+            <div class="flex flex-col space-y-4 py-6">
+                <a href="index2.html" onclick="closeMobileMenu()" class="hover:text-brand-600 transition">Beranda</a>
+                <a href="about.html" onclick="closeMobileMenu()" class="hover:text-brand-600 transition">Tentang
+                    Kami</a>
+                <a href="fleet.html" onclick="closeMobileMenu()" class="hover:text-brand-600 transition">Armada</a>
+                <a href="services.html" onclick="closeMobileMenu()" class="hover:text-brand-600 transition">Layanan</a>
+                <a href="blog2.html" onclick="closeMobileMenu()" class="text-brand-600 font-bold transition">Berita</a>
+                <a href="contact.html" onclick="closeMobileMenu()" class="pb-2 text-brand-600 font-semibold">Hubungi
+                    Kami</a>
+            </div>
         </div>
     </nav>
 
@@ -381,6 +397,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 
 </body>
 
