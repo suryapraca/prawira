@@ -64,15 +64,11 @@ body {
 
 /* Mobile Menu Transition */
 #mobile-menu {
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-#mobile-menu.active {
-    max-height: 500px;
-    opacity: 1;
+#mobile-menu.hidden {
+    display: none;
 }
 
 /* Advanced Animations */
